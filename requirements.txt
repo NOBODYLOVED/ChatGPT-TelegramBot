@@ -1,2 +1,2 @@
-openai
-telebot
+openai   #works only with python3.9 or higher 
+pyTelegramBotAPI  #aiogram analog 
