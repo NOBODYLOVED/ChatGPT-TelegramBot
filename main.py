@@ -24,8 +24,8 @@ def handle_message(message):
         temperature=0.5,  # control randomness, means less = less random.
                           # More = more random.
         max_tokens=3000,  # max symbols in answer
-        top_p=1.0,  # probability mass. Change for less probability answers
-        frequency_penalty=0.5,   # chance to get same answer
+        top_p=0.8,  # probability mass. Change for less probability answers
+        frequency_penalty=0.3,   # chance to get same answer
                                  # in the answer chain.
         presence_penalty=0.0,       # chance to get exactly same answer.
     )
