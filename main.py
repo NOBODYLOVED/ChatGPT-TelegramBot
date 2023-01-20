@@ -1,5 +1,5 @@
 import openai
-import telebot
+import telebot   # don't know how to solve, weird mypy problem
 from config import TOKEN, OpenAI_API
 
 """Connect tg, openai"""
@@ -9,6 +9,7 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
+    """Prepared answer for /start."""
     bot.send_message(message.chat.id, 'Привет, я не очень хорошо работаю, '
                      'но могу тебя развлечь :)')
 
